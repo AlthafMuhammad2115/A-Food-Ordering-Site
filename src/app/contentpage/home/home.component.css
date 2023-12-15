@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@500&family=Source+Code+Pro:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@500&family=Roboto+Slab:wght@800&family=Source+Code+Pro:wght@200&display=swap');
+*{
+    font-family: 'Open Sans', sans-serif;
+
+}
+.main{
+    overflow-x: hidden;
+}
+.pos{
+    width: 100%;
+    height: 700px;
+    position: relative;
+}
+ .img{
+    position: absolute;
+background-image: url("..\..\..\assets\food4.jpg");
+width: 100%;
+height: 700px;
+background-size: cover;
+background-position: center top bottom;
+position: relative;
+display: flex;
+justify-content: center;
+align-items: center;
+margin: 0px;
+
+}
+.order{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    z-index: 1;
+
+}
+.order p{
+font-family: 'Source Code Pro', monospace;
+color: white;
+
+}
+.deals{
+    height: 100%;
+    background-color: black;
+    opacity: 0.4;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+
+}
+.img button{
+    width: 45%;
+font-family: 'Source Code Pro', monospace;
+font-size: 18px;
+
+}
+.img h1 {
+    font: bolder;
+    font-size: 70px;
+    font-weight: 900px; 
+    color: white;
+    z-index: 1;
+font-family: 'Source Code Pro', monospace;
+
+    
+}
+.steps{
+    border: 1px solid black;
+    
+    border-radius: 5px;
+    text-align: center;
+}
+.title h2{
+    text-align: center;
+    
+}
+.step_box{
+    display: flex;
+    justify-content: space-around;
+}
+.food_titile{
+    text-align: center;
+}
+.steps{
+    
+}
+.steps:hover{
+    color: green;
+    border: 1px solid green ;
+}
+.arrow{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.arrow i{
+    font-size: 40px;
+}
+.item_box img{
+    width: 200px;
+    height: 200px;
+    
+}
+.item_box{
+    width: 200px;
+    text-align: left;
+    font-size: 18px;
+    font-weight: 800;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.item_box button{
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 600;
+    background-color: white;
+    color: black;
+    
+}
+
+.item_box i{
+    font-size: 20px;
+
+}
+.arrow button{
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    font-weight: bolder;
+
+   
+}
+.arrow i{
+    font-size: 20px;
+    
+}

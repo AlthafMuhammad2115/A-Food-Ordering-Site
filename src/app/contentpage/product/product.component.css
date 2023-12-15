@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@500&family=Source+Code+Pro:wght@200&display=swap');
+*{
+    font-family: 'Open Sans', sans-serif;
+
+}
+.main{
+    position: relative;
+}
+.order input::placeholder{
+    font-size: 15px;
+}
+.order input:focus::placeholder{
+    color: transparent;
+}
+ 
+.product img{
+    border-radius: 20px;
+}
+.order input{
+    margin-top: 10px;
+}
+.btn{
+    display: flex;
+    justify-content: center ;
+}
+.cart{
+    position: absolute;
+    top: 100px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;    text-align: left;
+    
+
+}
+.cart .product img{
+    width: 200px;
+    height: 200px;
+}

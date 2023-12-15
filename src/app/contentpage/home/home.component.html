@@ -1,0 +1,72 @@
+<div class="main ">
+  <div class="pos">
+<div class="img  col-lg-12 col-md-12 col-sm-12 ">
+  <div class="order">
+  <h1 >BEST DEALS <br>50% OFF</h1>
+  <p>order foods,enjoy meals</p>
+  <button class="btn btn-success" routerLink="/menu">ORDER NOW<i class="bi bi-caret-right-fill"></i></button>
+</div>
+  <div class="deals col-12 ">
+ 
+</div>
+</div>
+</div>
+
+
+  <div class="col-lg-12 container-fluid title  mt-3 mb-3 ml-5 mr-5">
+    <h2>HOW TO ORDER?</h2>
+  </div>
+
+
+<div class="row container-fluid step_box mb-3   ">
+  <div class="col-lg-3 ml-2 steps " routerLink="/menu">
+    <h3>STEP 1</h3>
+    <p>Select Food</p>
+  </div>
+    <div class="arrow col-lg-1">
+      <i class="bi bi-arrow-right "></i>
+    </div>
+  <div class="col-lg-3 steps " routerLink="/cart">
+    <h3>STEP 2</h3>
+    <p>Add to cart</p>
+  </div>
+  <div class="arrow col-lg-1">
+    <i class="bi bi-arrow-right"></i>
+  </div>
+  <div class="col-lg-3  steps " routerLink="/Login">
+    <h3>STEP 3</h3>
+    <p>Order food</p>
+  </div>
+</div>
+
+
+<div class="food_titile container-fluid col-lg-12 mt-3 mb-3">
+  <h1>Your Deals...</h1>
+</div>
+
+
+<div class="row ">
+  <div class=" col-lg-3 col-xxl-2 col-sm-6  col-6 col-md-4 mb-5 d-flex justify-content-center main-item-box" *ngFor="let item of array " >
+    <div >
+    <div class="item_box" [routerLink]="['/menu',item.id]">
+    <img src="{{item.foodImg}}" alt="">
+    <p class="mt-1" style="font-weight: 400;">{{item.foodName}}</p>
+    <p style="font-weight: 100;">{{item.foodPrice | currency:'INR'}}</p>
+    
+  </div>
+</div>
+
+  </div>
+  
+  <div class="arrow col-lg-3 col-sm-6 col-12 col-md-4 mb-5 d-flex  align-items-center">
+  
+    <button type="button" class="btn btn-outline-success" routerLink="/menu">more<i class="bi bi-arrow-right"></i></button>
+    
+  </div>
+
+</div>
+
+
+
+
+</div>

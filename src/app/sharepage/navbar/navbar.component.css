@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+*{
+    font-family: 'Poppins', sans-serif;
+}
+.active{
+    font-weight: 600;
+}
+
+
+.navbar-light .navbar-brand{
+    font-size: 40px;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+.main .nav-link{
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+
+}
+.label li :hover{
+    font-weight: 700;
+}
+.navbar-brand{
+    
+    text-transform: uppercase;
+}

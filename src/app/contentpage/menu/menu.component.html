@@ -1,0 +1,21 @@
+<div class="container-fluid main  mt-5">
+<div class="row ">
+    <div class=" col-lg-4 col-sm-6 col-12 col-md-4 mb-5 d-flex justify-content-center main-item-box" *ngFor="let item of array ">
+      <div class="item_box mb-none mb-md-3  container-fluid">
+        <div class="img d-flex justify-content-center">
+      <img src="{{item.foodImg}}" alt="">
+    </div>
+    <div class="name d-md-flex justify-content-center">
+      <p class="mt-1  ">{{item.foodName}}</p>
+    </div>
+      <p class="mt-1 d-none d-md-block">{{item.foodDetails}}</p>
+      <p>{{item.foodPrice | currency:'INR'}}</p>
+      <div class="btn">
+      <button  class="btn btn-success" [routerLink]="['/cart']"><i class="bi bi-cart-fill"></i>  Add to cart</button>
+      <button  class="btn btn-link" [routerLink]="['/menu',item.id]">Show detials</button>
+    </div>
+    </div>
+    </div>
+    </div>
+</div>
+  

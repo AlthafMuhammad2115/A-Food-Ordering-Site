@@ -1,0 +1,35 @@
+
+.div{
+    border: black 1px solid;
+    
+}
+.div h1{
+    text-align: center;
+}
+.div input{
+    background-color: white;
+    border: black 1px solid;
+    border-radius: 0px;
+    margin: 10px 10px 10px 10px;
+    color: black;
+    font-size: 12px;
+}
+.main_div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(34, 93, 140);
+}
+.main_div span{
+    color: white;
+}
+.ul_div{
+    display: flex;
+    list-style: none;
+
+}
+.ul_div li{
+    padding: 0px 10px;
+    color: white;
+    cursor:pointer;
+}
