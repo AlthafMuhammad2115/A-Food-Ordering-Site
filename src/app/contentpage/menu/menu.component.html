@@ -11,7 +11,7 @@
       <p class="mt-1 d-none d-md-block">{{item.foodDetails}}</p>
       <p>{{item.foodPrice | currency:'INR'}}</p>
       <div class="btn">
-      <button  class="btn btn-success" [routerLink]="['/cart']"><i class="bi bi-cart-fill"></i>  Add to cart</button>
+      <button  class="btn btn-success" (click)="AddToCart(item)" [routerLink]="[]"><i class="bi bi-cart-fill"></i>  Add to cart</button>
       <button  class="btn btn-link" [routerLink]="['/menu',item.id]">Show detials</button>
     </div>
     </div>

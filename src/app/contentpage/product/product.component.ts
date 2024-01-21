@@ -2,6 +2,7 @@ import { Component,OnInit } from '@angular/core';
 import { FormBuilder, ReactiveFormsModule, Validators } from '@angular/forms';
 import { ActivatedRoute} from '@angular/router';
 import { ApicallService } from 'src/app/apicall.service';
+import { CartService } from 'src/app/services/cart.service';
 
 @Component({
   selector: 'app-product',
@@ -9,7 +10,7 @@ import { ApicallService } from 'src/app/apicall.service';
   styleUrls: ['./product.component.css']
 })
 export class ProductComponent {
-  constructor(private param: ActivatedRoute, private service:ApicallService,private fb:FormBuilder){};
+  constructor(private param: ActivatedRoute, private service:ApicallService,private fb:FormBuilder,private cartserv:CartService){};
   getmenuId:any;
   menudata:any;
   ngOnInit():void{
@@ -25,7 +26,6 @@ export class ProductComponent {
       console.log(this.menudata,'menudata');
   }
 
-  check=false;
   submit=false;
   reg=this.fb.group({
     name:['',Validators.required],
@@ -41,9 +41,8 @@ export class ProductComponent {
     console.log(this.f,'controls')
     console.log(this.submit);
   }
-  onclick(){
-    this.check=true;
-    console.log(this.check)
-  }
  
+  AddToCart(item:any){
+    this.cartserv.AddToCart(item);
+  }
 }
