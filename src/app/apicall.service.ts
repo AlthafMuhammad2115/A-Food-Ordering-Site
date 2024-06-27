@@ -13,7 +13,7 @@ export class ApicallService {
       foodPrice:200,
       count:1,
       subtotal:200,
-      foodImg:"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/wzfq7djolqxgdhghebbq"
+      foodImg:"../assets/food8.webp"
     },
     {
       id:2,
@@ -22,7 +22,7 @@ export class ApicallService {
       foodPrice:369,
       count:1,
       subtotal:369,
-      foodImg:"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/sgbobtbxlojbtdnr2m5k"
+      foodImg:"../assets/food6.webp"
     },
     {
       id:3,
@@ -31,7 +31,7 @@ export class ApicallService {
       foodPrice:149,
       count:1,
       subtotal:149,
-      foodImg:"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/xbeqlsck3p0kei53to7k"
+      foodImg:"../assets/food2.jpg"
     },
     {
       id:4,
@@ -40,7 +40,7 @@ export class ApicallService {
       foodPrice:140,
       count:1,
       subtotal:140,
-      foodImg:"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/l2ng6gtge30sqaafqng7"
+      foodImg:"../assets/food7.webp"
     },
     {
       id:5,
@@ -49,7 +49,7 @@ export class ApicallService {
       foodPrice:105,
       count:1,
       subtotal:105,
-      foodImg:"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/iqlmbg1hlyc0dspdyzzv"
+      foodImg:"../assets/food5.webp"
     },
     {
       id:6,
@@ -58,7 +58,7 @@ export class ApicallService {
       foodPrice:219,
       count:1,
       subtotal:219,
-      foodImg:"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/wtj8esaeslvlscv8glj6"
+      foodImg:"../assets/food9.webp"
     },
     
   ]
